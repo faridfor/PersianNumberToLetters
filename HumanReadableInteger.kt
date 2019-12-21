@@ -15,15 +15,15 @@ object HumanReadableInteger {
     private val negative: Map<Int, String> = mapOf((ENGLISH to "Negative "), (PERSIAN to "منفی "))
     private val zero: Map<Int, String> = mapOf((ENGLISH to "Zero"), (PERSIAN to "صفر"))
     private val numberWords: List<NumberWord> = listOf(
-//            NumberWord(TENS, ENGLISH, listOf("", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine")),
+            NumberWord(TENS, ENGLISH, listOf("", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine")),
             NumberWord(ONES, PERSIAN, listOf("", "یک", "دو", "سه", "چهار", "پنج", "شش", "هفت", "هشت", "نه")),
-//            NumberWord(TEENS, ENGLISH, listOf("Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen")),
+            NumberWord(TEENS, ENGLISH, listOf("Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen")),
             NumberWord(TEENS, PERSIAN, listOf("ده", "یازده", "دوازده", "سیزده", "چهارده", "پانزده", "شانزده", "هفده", "هجده", "نوزده")),
-//            NumberWord(TENS, ENGLISH, listOf("Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety")),
+            NumberWord(TENS, ENGLISH, listOf("Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety")),
             NumberWord(TENS, PERSIAN, listOf("بیست", "سی", "چهل", "پنجاه", "شصت", "هفتاد", "هشتاد", "نود")),
-//            NumberWord(HUNDREDS, ENGLISH, listOf("", "One Hundred", "Two Hundred", "Three Hundred", "Four Hundred", "Five Hundred", "Six Hundred", "Seven Hundred", "Eight Hundred", "Nine Hundred")),
+            NumberWord(HUNDREDS, ENGLISH, listOf("", "One Hundred", "Two Hundred", "Three Hundred", "Four Hundred", "Five Hundred", "Six Hundred", "Seven Hundred", "Eight Hundred", "Nine Hundred")),
             NumberWord(HUNDREDS, PERSIAN, listOf("", "یکصد", "دویست", "سیصد", "چهارصد", "پانصد", "ششصد", "هفتصد", "هشتصد", "نهصد")),
-//            NumberWord(THOUSANDS, ENGLISH, listOf("", " Thousand", " Million", " Billion", " Trillion", " Quadrillion", " Quintillion", " Sextillian", " Septillion", " Octillion", " Nonillion", " Decillion", " Undecillion", " Duodecillion", " Tredecillion", " Quattuordecillion", " Quindecillion", " Sexdecillion", " Septendecillion", " Octodecillion", " Novemdecillion", " Vigintillion", " Unvigintillion", " Duovigintillion", " 10^72", " 10^75", " 10^78", " 10^81", " 10^84", " 10^87", " Vigintinonillion", " 10^93", " 10^96", " Duotrigintillion", " Trestrigintillion")),
+            NumberWord(THOUSANDS, ENGLISH, listOf("", " Thousand", " Million", " Billion", " Trillion", " Quadrillion", " Quintillion", " Sextillian", " Septillion", " Octillion", " Nonillion", " Decillion", " Undecillion", " Duodecillion", " Tredecillion", " Quattuordecillion", " Quindecillion", " Sexdecillion", " Septendecillion", " Octodecillion", " Novemdecillion", " Vigintillion", " Unvigintillion", " Duovigintillion", " 10^72", " 10^75", " 10^78", " 10^81", " 10^84", " 10^87", " Vigintinonillion", " 10^93", " 10^96", " Duotrigintillion", " Trestrigintillion")),
             NumberWord(THOUSANDS, PERSIAN, listOf("", " هزار", " میلیون", " میلیارد", " تریلیون", " Quadrillion", " Quintillion", " Sextillian", " Septillion", " Octillion", " Nonillion", " Decillion", " Undecillion", " Duodecillion", " Tredecillion", " Quattuordecillion", " Quindecillion", " Sexdecillion", " Septendecillion", " Octodecillion", " Novemdecillion", " Vigintillion", " Unvigintillion", " Duovigintillion", " 10^72", " 10^75", " 10^78", " 10^81", " 10^84", " 10^87", " Vigintinonillion", " 10^93", " 10^96", " Duotrigintillion", " Trestrigintillion")))
 
     fun numberToText(number: String, @Language language: Int) = numberToText(number.toLong(), language)
